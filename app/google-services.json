@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "717393838979",
+    "project_id": "anxily",
+    "storage_bucket": "anxily.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:717393838979:android:8eb7105c779ba3ece3ecb6",
+        "android_client_info": {
+          "package_name": "com.app.anxily"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "717393838979-60mlnqg4l1jm1q803q137c08ce41cfbh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBRDmFdh84rRLl09Sdaxd4Rb5dIzglKTHI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "717393838979-60mlnqg4l1jm1q803q137c08ce41cfbh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent"
+    android:background="#6065CF"
+    android:padding="16dp"
+    tools:context=".SelectGenderActivity">
+
+
+    <TextView
+        android:id="@+id/tv_question"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/dm_sans_bold"
+        android:text="Question 1/5"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="16dp" />
+
+
+    <com.google.android.material.progressindicator.LinearProgressIndicator
+        android:id="@+id/linearProgressIndicator"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:indeterminate="true"
+        android:progress="50"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_question"
+        app:trackColor="#7D82D8"
+        app:trackCornerRadius="16dp"
+        app:trackThickness="40dp" />
+
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_card_no_padding"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearProgressIndicator"
+        app:layout_constraintVertical_bias="0.19"
+        tools:layout_editor_absoluteX="16dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_margin="16dp"
+            android:layout_marginTop="32dp"
+            android:fontFamily="@font/dm_sans_bold"
+            android:padding="16dp"
+            android:text="Do you have stage fear?"
+            android:textAlignment="viewStart"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+
+        <com.google.android.material.button.MaterialButton
+            style="@style/Widget.Material3.Button.OutlinedButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/dm_sans_bold"
+            android:text="Yes"
+            android:textAlignment="viewStart"
+            android:textColor="#5A5A5A"
+            android:textSize="18sp"
+            app:cornerRadius="10dp"
+            app:strokeColor="@color/black" />
+
+        <com.google.android.material.button.MaterialButton
+            style="@style/Widget.Material3.Button.OutlinedButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:fontFamily="@font/dm_sans_bold"
+            android:text="No"
+            android:textAlignment="viewStart"
+            android:textColor="#5A5A5A"
+            android:textSize="18sp"
+            app:cornerRadius="10dp"
+            app:strokeColor="@color/black" />
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_gravity="end"
+
+            android:layout_marginTop="108dp"
+            android:background="@drawable/bg_next"
+            android:fontFamily="@font/dm_sans_bold"
+            android:text="Next"
+
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+
+
+            />
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

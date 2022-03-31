@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="300dp"
+        android:layout_gravity="center"
+        android:src="@drawable/image1"
+        android:layout_height="300dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#6065CF"
+        android:textStyle="bold"
+        android:text="15 fruits to keep you hydrated"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="In fact, not drinking enough water can lead to dehydration, which can cause fatigue, headaches, skin problems"/>
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>

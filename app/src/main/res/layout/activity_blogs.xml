@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="16dp"
+    android:padding="16dp"
+    android:orientation="vertical"
+    tools:context=".BlogsActivity">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/dm_sans_bold"
+        android:text="Our \nBlogs"
+        android:textAlignment="viewStart"
+        android:textColor="#6065CF"
+        android:textSize="38sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:fontFamily="@font/dm_sans_bold"
+        android:layout_marginTop="8dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Read blogs about meditation, breathing exercises, and diet. Relax, love yourself and grow ✌."/>
+
+    <TextView
+        android:layout_marginTop="18dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/dm_sans_bold"
+        android:text="Improve Diet"
+        android:textAlignment="viewStart"
+        android:textColor="#6065CF"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:id="@+id/hs"
+        android:layout_height="wrap_content">
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_width="300dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/image1"
+                    android:layout_height="300dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#6065CF"
+                    android:textStyle="bold"
+                    android:text="15 fruits to keep you hydrated"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="In fact, not drinking enough water can lead to dehydration, which can cause fatigue, headaches, skin problems"/>
+
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="wrap_content"
+                android:orientation="vertical"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_width="300dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/image1"
+                    android:layout_height="300dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#6065CF"
+                    android:textStyle="bold"
+                    android:text="15 fruits to keep you hydrated"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="In fact, not drinking enough water can lead to dehydration, which can cause fatigue, headaches, skin problems"/>
+
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+    </HorizontalScrollView>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

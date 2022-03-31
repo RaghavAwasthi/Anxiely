@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="16dp"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+
+    <androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".BlogDetailActivity">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:src="@drawable/blog_1" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/dm_sans_bold"
+            android:text="What are some foods to ease your anxiety?"
+            android:textColor="#6065CF"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/dm_sans_medium"
+            android:text="People can make a variety of lifestyle changes to help manage their anxiety. Eating a diet high in vegetables, fruit, legumes, whole grains, and lean protein can be helpful.\n \n \n The symptoms of GAD include psychological and physical symptoms, such as : \n 1. fear \n 2. Tension \n 3. Depression \n 4. Anxiety \n 5. Sleepiness \n 6. Fatigue \n 7. Nervousness \n 8. Depression
+"
+            android:textSize="16sp" />
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</ScrollView>
