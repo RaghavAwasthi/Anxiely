@@ -9,14 +9,7 @@
     tools:context=".DashboardActivity">
 
 
-    <ImageView
-        android:layout_width="32dp"
-        android:layout_height="32dp"
 
-        android:layout_margin="32dp"
-        android:src="@drawable/ic_profile"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/textView3"
@@ -25,7 +18,7 @@
         android:fontFamily="@font/dm_sans_bold"
         android:paddingTop="16dp"
         android:layout_margin="16dp"
-        android:text="Let's Go"
+        android:text="Inspiring Stories"
         android:textColor="@color/appYellow"
         android:textSize="36sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -34,13 +27,14 @@
 
     <TextView
         android:id="@+id/textView5"
+        android:layout_marginTop="8dp"
         android:layout_marginStart="16dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:fontFamily="@font/dm_sans_bold"
-        android:text="Be calm 🍃"
+        android:fontFamily="@font/dm_sans_medium"
+        android:text="“All of us are watchers – of television, of time clocks, of traffic on the freeway – but few are observers. Everyone is looking, not many are seeing” ~ Peter M. Leschak"
         android:textSize="16sp"
-        android:textStyle="bold"
+
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"

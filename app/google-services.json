@@ -14,6 +14,14 @@
       },
       "oauth_client": [
         {
+          "client_id": "717393838979-hs4tt3la1f848pnbd3236ikskn43ki17.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.app.anxily",
+            "certificate_hash": "6a4b23150780c4555dc0e95786f0b7aa346801e4"
+          }
+        },
+        {
           "client_id": "717393838979-60mlnqg4l1jm1q803q137c08ce41cfbh.apps.googleusercontent.com",
           "client_type": 3
         }

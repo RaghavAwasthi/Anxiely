@@ -4,29 +4,17 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-
-
     tools:context=".DashboardActivity">
-
-
-    <ImageView
-        android:layout_width="32dp"
-        android:layout_height="32dp"
-
-        android:layout_margin="32dp"
-        android:src="@drawable/ic_profile"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/textView3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_margin="16dp"
         android:fontFamily="@font/dm_sans_bold"
         android:paddingTop="16dp"
-        android:layout_margin="16dp"
-        android:text="Let's Go"
-        android:textColor="@color/appYellow"
+        android:text="Let's Talk"
+        android:textColor="#DCAFE3"
         android:textSize="36sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -34,11 +22,12 @@
 
     <TextView
         android:id="@+id/textView5"
-        android:layout_marginStart="16dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:fontFamily="@font/dm_sans_bold"
-        android:text="Be calm 🍃"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/dm_sans_regular"
+        android:text="Here are some people who are 24*7 there for you. Feel free to talk to them. We insist"
         android:textSize="16sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
@@ -50,6 +39,7 @@
     <androidx.appcompat.widget.LinearLayoutCompat
         android:layout_width="match_parent"
         android:layout_height="0dp"
+        android:layout_marginTop="16dp"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView5">

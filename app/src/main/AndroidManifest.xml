@@ -8,15 +8,37 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.Anxily">
+        android:theme="@style/Theme.Anxily.NoActionBar">
+        <activity
+            android:name=".help.GetHelpActivity"
+            android:exported="false" />
+        <activity
+            android:name=".inspire.InspireActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RelaxActivity"
+            android:exported="false" />
+        <activity
+            android:name=".BreatheActivity"
+            android:exported="false" />
+        <activity
+            android:name=".FeelingGratefullActivity"
+            android:exported="false" />
+        <activity
+            android:name=".quiz.OnboardingQuizActivity"
+            android:exported="false" />
+        <activity
+            android:name=".quiz.SpecialQuizActivity"
+            android:exported="false"
+            android:theme="@style/Theme.Anxily.NoActionBar" />
         <activity
             android:name=".BlogDetailActivity"
             android:exported="false"
-            android:theme="@style/Theme.Anxily.NoActionBar"/>
+            android:theme="@style/Theme.Anxily.NoActionBar" />
         <activity
             android:name=".BlogsActivity"
             android:exported="false"
-            android:theme="@style/Theme.Anxily.NoActionBar"/>
+            android:theme="@style/Theme.Anxily.NoActionBar" />
         <activity
             android:name=".QuizEndActivity"
             android:exported="false"
@@ -26,7 +48,7 @@
             android:exported="false"
             android:theme="@style/Theme.Anxily.NoActionBar" />
         <activity
-            android:name=".QuizActivity"
+            android:name=".quiz.QuizActivity"
             android:exported="false"
             android:theme="@style/Theme.Anxily.NoActionBar" />
         <activity

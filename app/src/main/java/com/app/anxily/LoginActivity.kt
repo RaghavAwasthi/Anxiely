@@ -3,6 +3,8 @@ package com.app.anxily
 import android.content.Intent
 import android.os.Bundle
 import com.app.anxily.databinding.ActivityLoginBinding
+import com.app.anxily.quiz.OnboardingQuizActivity
+import com.app.anxily.quiz.SpecialQuizActivity
 import com.app.base.ui.activity.BindingBaseActivity
 import com.firebase.ui.auth.AuthUI
 import com.firebase.ui.auth.FirebaseAuthUIActivityResultContract
@@ -19,7 +21,7 @@ class LoginActivity : BindingBaseActivity<ActivityLoginBinding>() {
 
     override fun onCreate(savedInstanceState: Bundle?, binding: ActivityLoginBinding) {
         if (FirebaseAuth.getInstance().currentUser != null) {
-            startActivity(Intent(this, DashboardActivity::class.java))
+            startActivity(Intent(this, OnboardingQuizActivity::class.java))
             finish()
         }
         binding.btnLogin.setOnClickListener {
@@ -51,7 +53,7 @@ class LoginActivity : BindingBaseActivity<ActivityLoginBinding>() {
         if (result.resultCode == RESULT_OK) {
             // Successfully signed in
             val user = FirebaseAuth.getInstance().currentUser
-            startActivity(Intent(this, DashboardActivity::class.java))
+            startActivity(Intent(this, OnboardingQuizActivity::class.java))
             finish()
             // ...
         } else {

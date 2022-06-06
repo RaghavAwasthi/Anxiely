@@ -1,8 +1,10 @@
-package com.app.anxily
+package com.app.anxily.quiz
 
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Toast
+import com.app.anxily.QuizEndActivity
+import com.app.anxily.R
 import com.app.anxily.databinding.ActivityQuizBinding
 import com.app.base.ui.activity.BindingBaseActivity
 
@@ -13,9 +15,9 @@ class QuizActivity : BindingBaseActivity<ActivityQuizBinding>() {
     var no = false
     override fun onCreate(savedInstanceState: Bundle?, binding: ActivityQuizBinding) {
 
-        questions.add(Quiz("What is the capital of India?", 40))
-        questions.add(Quiz("Do you love yourself", 70))
-        questions.add(Quiz("What is the capital of India?", 100))
+        questions.add(Quiz("Do you have Stage Fear?", 40))
+        questions.add(Quiz("Do you think you have insomnia?", 70))
+        questions.add(Quiz("Feeling uncomfortable at parties?", 100))
 
         binding.tvQuestion.text = "Question 1/5"
         binding.tvQuestionInner.text = questions[count].question
@@ -51,16 +53,17 @@ class QuizActivity : BindingBaseActivity<ActivityQuizBinding>() {
 
             if (count < questions.size - 1) {
                 count++
-                binding.tvQuestion.text = "Question ${count + 1}/5"
+                binding.tvQuestion.text = "Question ${count + 1}/${questions.size}"
                 binding.tvQuestionInner.text = questions[count].question
                 binding.linearProgressIndicator.setProgress(questions[count].progress, true)
             } else {
-                Toast.makeText(this, "Quiz Completed", Toast.LENGTH_SHORT).show()
-                startActivity(Intent(this, QuizEndActivity::class.java))
+
+                startActivity(Intent(this, SpecialQuizActivity::class.java))
                 finish()
             }
         }
     }
+
 
 
     override fun getViewBinding(): ActivityQuizBinding {

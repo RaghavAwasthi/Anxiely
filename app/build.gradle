@@ -39,11 +39,13 @@ android {
 
 dependencies {
     implementation platform('com.google.firebase:firebase-bom:29.3.0')
-
+    def lottieVersion = '5.2.0'
+    def exoplayerVersion = '2.17.1'
+    implementation "com.google.android.exoplayer:exoplayer:$exoplayerVersion"
     // Declare the dependency for the Firebase Authentication library
     // When using the BoM, you don't specify versions in Firebase library dependencies
     implementation 'com.google.firebase:firebase-auth'
-
+    implementation "com.airbnb.android:lottie:$lottieVersion"
     // Also declare the dependency for the Google Play services library and specify its version
     implementation 'com.google.android.gms:play-services-auth:20.1.0'
     implementation 'com.google.firebase:firebase-auth:21.0.2'
@@ -59,6 +61,8 @@ dependencies {
     implementation 'androidx.lifecycle:lifecycle-livedata-ktx:2.4.1'
     implementation 'com.google.firebase:firebase-auth-ktx:21.0.3'
     implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'com.github.bumptech.glide:glide:4.13.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.13.0'
     implementation project(path: ':base')
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.3'
